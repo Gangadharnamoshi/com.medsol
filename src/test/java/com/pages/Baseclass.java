@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -43,6 +44,9 @@ public class Baseclass {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("testurl"));
+			String cuurentURL = driver.getCurrentUrl();
+			String expectedURL = "https://medsolbuffer.in/login";
+			Assert.assertEquals(cuurentURL, expectedURL);
 
 		} else if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
@@ -51,6 +55,9 @@ public class Baseclass {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("testurl"));
+			String cuurentURL = driver.getCurrentUrl();
+			String expectedURL = "https://medsolbuffer.in/login";
+			Assert.assertEquals(cuurentURL, expectedURL);
 
 		}
 	}
