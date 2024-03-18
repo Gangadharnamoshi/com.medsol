@@ -16,8 +16,10 @@ public class Baseclass {
 	public static WebDriver driver;
 	public static Properties prop = new Properties();
 	public static Properties loc = new Properties();
+	public static Properties data= new Properties();
 	public static FileReader fr;
 	public static FileReader fr1;
+	public static FileReader fr2;
 
 	public WebDriver getdriver() {
 		return driver;
@@ -32,8 +34,11 @@ public class Baseclass {
 					System.getProperty("user.dir") + "//src//test//resources//config files//config.properties");
 			FileReader fr1 = new FileReader(
 					System.getProperty("user.dir") + "//src//test//resources//config files//loc.properties");
+			FileReader fr2 = new FileReader(
+					System.getProperty("user.dir") + "//src//test//resources//testdata//data.txt");
 			prop.load(fr);
 			loc.load(fr1);
+			data.load(fr2);
 		}
 
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
