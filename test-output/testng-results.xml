@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-19T08:09:18 IST" name="Suite" finished-at="2024-03-19T08:09:34 IST" duration-ms="15558">
+  <suite started-at="2024-03-19T20:06:45 IST" name="Suite" finished-at="2024-03-19T20:07:01 IST" duration-ms="16360">
     <groups>
     </groups>
-    <test started-at="2024-03-19T08:09:18 IST" name="Test" finished-at="2024-03-19T08:09:34 IST" duration-ms="15558">
+    <test started-at="2024-03-19T20:06:45 IST" name="Test" finished-at="2024-03-19T20:07:01 IST" duration-ms="16360">
       <class name="com.testcases.Tc_login">
-        <test-method is-config="true" signature="url_launch()[pri:0, instance:com.testcases.Tc_login@cb0755b]" started-at="2024-03-19T08:09:18 IST" name="url_launch" finished-at="2024-03-19T08:09:26 IST" duration-ms="8275" status="PASS">
+        <test-method is-config="true" signature="url_launch()[pri:0, instance:com.testcases.Tc_login@33065d67]" started-at="2024-03-19T20:06:45 IST" name="url_launch" finished-at="2024-03-19T20:06:56 IST" duration-ms="11092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url_launch -->
-        <test-method signature="login()[pri:0, instance:com.testcases.Tc_login@cb0755b]" started-at="2024-03-19T08:09:26 IST" name="login" finished-at="2024-03-19T08:09:33 IST" duration-ms="7149" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.testcases.Tc_login@33065d67]" started-at="2024-03-19T20:06:56 IST" name="login" finished-at="2024-03-19T20:07:01 IST" duration-ms="5137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
